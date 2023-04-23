@@ -1,0 +1,13 @@
+# Node.js dependencies
+Frontend/GeographyBuff/node_modules/
+Frontend/GeographyBuff/.idea/
+Frontend/GeographyBuff/.vscode/
+Frontend/GeographyBuff/.angular
+
+# Build artifacts
+dist/
+
+# Editor/IDE files
+*.iml
+*.ipr
+*.iws
