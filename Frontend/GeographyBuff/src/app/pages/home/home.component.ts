@@ -3,7 +3,7 @@ import { NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-components',
-  templateUrl: './components.component.html',
+  templateUrl: './home.component.html',
   styles: [`
     ngb-progressbar {
         margin-top: 5rem;

@@ -12,6 +12,7 @@ import { TypographyComponent } from './typography/typography.component';
 import { NucleoiconsComponent } from './nucleoicons/nucleoicons.component';
 import { ComponentsComponent } from './home.component';
 import { NotificationComponent } from './notification/notification.component';
+import { ModalComponent} from "./modal/modal.component";
 
 @NgModule({
   imports: [
@@ -29,6 +30,7 @@ import { NotificationComponent } from './notification/notification.component';
     TypographyComponent,
     NucleoiconsComponent,
     NotificationComponent,
+    ModalComponent
   ],
   exports:[ ComponentsComponent ]
 })

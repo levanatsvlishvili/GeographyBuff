@@ -1,15 +1,23 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from "@angular/router";
-import {HomeComponent} from "./pages/home/home.component";
+import {ComponentsComponent} from "./pages/home/home.component";
+import {CommonModule} from "@angular/common";
+import {BrowserModule} from "@angular/platform-browser";
 
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch:'full'},
-  {path: 'home', component: HomeComponent}
+  {path: 'home', component: ComponentsComponent}
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  imports: [
+    CommonModule,
+    BrowserModule,
+    RouterModule.forRoot(routes,{
+      useHash: true
+    })
+  ],
+  exports: [
+  ],
 })
-export class AppRoutingModule {
-}
+export class AppRoutingModule { }
